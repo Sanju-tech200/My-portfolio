@@ -221,80 +221,59 @@ body {
 /* =========================
    Skills Section
 ========================= */
-.skills {
+.services {
+  background: #0a2239;
   padding: 80px 10%;
-  background-color: #0a2239;
   color: whitesmoke;
+  text-align: center;
 }
 
-.skills_container {
-  max-width: 700px;
-  margin: auto;
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.skill {
-  margin-bottom: 25px;
-}
-
-.skill h3 {
-  margin-bottom: 8px;
-  font-size: 18px;
-}
-
-.progress {
-  background-color: #ccc;
-  border-radius: 25px;
-  overflow: hidden;
-  height: 20px;
-}
-
-.bar {
-  background-color: aqua;
-  height: 100%;
-  line-height: 20px;
-  color: #081b29;
-  text-align: right;
-  padding-right: 10px;
-  font-weight: bold;
-}
-/* About Section */
-.about {
-  padding: 80px 10%;
-  background-color: #0a2239;
-  color: whitesmoke;
-}
-
-.about_container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.about_image img {
-  width: 100%;
-  max-width: 350px;
+.service_box {
+  background: #102b45;
+  border: 2px solid aqua;
+  padding: 30px 20px;
   border-radius: 12px;
-  border: 3px solid aqua;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: 0.3s;
 }
 
-.about_content {
-  flex: 1;
-  min-width: 300px;
+.service_box:hover {
+  transform: translateY(-10px);
+  border-color: #00c0c0;
 }
 
-.about_content h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.service_icon {
+  font-size: 40px;
+  color: aqua;
+  margin-bottom: 15px;
+}
+
+.service_box h3 {
+  margin-bottom: 10px;
   color: aqua;
 }
 
-.about_content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+.github_btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #081b29;
+  background: aqua;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
+
+.github_btn:hover {
+  background: #00c0c0;
+}
+
 /*Project*/
 .projects {
   padding: 80px 10%;
